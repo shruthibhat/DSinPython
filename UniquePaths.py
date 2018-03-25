@@ -5,7 +5,11 @@ The robot is trying to reach the bottom right corner of the grid. How many possi
 
 
 def calculate_unique_paths(m, n):
+    # Initialize a matrix of size [m+1][m+2]
+
     matrix = [[0 for j in range(n+1)] for i in range(m+1)]
+    # The total unique paths at grid (r, c) are equal to the sum of total unique paths from grid to the
+    # right (r, c + 1) and the grid below (r + 1, c).
     matrix[m-1][n] = 1
 
     for row in range(m-1, -1, -1):
