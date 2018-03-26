@@ -6,6 +6,7 @@ the top?
 Solution : o(n) runtime ,O(1) space - Dynamic Programming
 
 """
+__author__ = "Shruthi"
 
 
 def climb_stairs(n):
@@ -20,7 +21,8 @@ def climb_stairs(n):
     return b
 
 
-print("The distinct ways 1 stairs can be climbed are:", climb_stairs(1))
-print("The distinct ways 2 stairs can be climbed are:", climb_stairs(2))
-print("The distinct ways 6 stairs can be climbed are:", climb_stairs(6))
+if __name__ == '__main__':
+    print("The distinct ways 1 stairs can be climbed are:", climb_stairs(1))
+    print("The distinct ways 2 stairs can be climbed are:", climb_stairs(2))
+    print("The distinct ways 6 stairs can be climbed are:", climb_stairs(6))
 

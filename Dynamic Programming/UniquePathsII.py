@@ -9,13 +9,16 @@
 """
 
 
-def uniquePathsWithObstacles(obstacleGrid):
+__author__ = "Shruthi"
+
+
+def uniquePathsWithObstacles(obstaclegrid):
     """
-    :type obstacleGrid: List[List[int]]
+    :type obstaclegrid: List[List[int]]
     :rtype: int
     """
-    m = len(obstacleGrid)
-    n = len(obstacleGrid[0])
+    m = len(obstaclegrid)
+    n = len(obstaclegrid[0])
 
     matrix = [[0 for j in range(n + 1)] for i in range(m + 1)]
 
@@ -30,5 +33,6 @@ def uniquePathsWithObstacles(obstacleGrid):
     return matrix[0][0]
 
 
-query = [[0, 0, 0], [0, 1, 0], [0, 0, 0]]
-print "The number of unique paths possible are :", uniquePathsWithObstacles(query)
+if __name__ == '__main__':
+    query = [[0, 0, 0], [0, 1, 0], [0, 0, 0]]
+    print "The number of unique paths possible are :", uniquePathsWithObstacles(query)

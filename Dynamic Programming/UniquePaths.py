@@ -2,6 +2,7 @@
 A robot is located at the top-left corner of a m X n. the robot can move either right or down at a given point.
 The robot is trying to reach the bottom right corner of the grid. How many possible unique paths are there
 """
+__author__ = "Shruthi"
 
 
 def calculate_unique_paths(m, n):
@@ -19,4 +20,5 @@ def calculate_unique_paths(m, n):
     return matrix[0][0]
 
 
-print "The number of unique paths possible are :", calculate_unique_paths(3, 7)
+if __name__ == '__main__':
+    print "The number of unique paths possible are :", calculate_unique_paths(3, 7)

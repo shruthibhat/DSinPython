@@ -1,3 +1,6 @@
+__author__ = "Shruthi"
+
+
 def two_sum (A, target):
     """Returns the first positions of the first occuring elements whose sum is same as target else return 0"""
     two_sum_dict = {}
@@ -9,5 +12,6 @@ def two_sum (A, target):
     return [0, 0]
 
 
-print(two_sum([2, 4, 6, 7, 8, 10], 12))
-print(two_sum([2, 4, 6, 7, 8, 10], 100))
+if __name__ == '__main__':
+    print(two_sum([2, 4, 6, 7, 8, 10], 12))
+    print(two_sum([2, 4, 6, 7, 8, 10], 100))
