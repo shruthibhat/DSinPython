@@ -35,4 +35,4 @@ def uniquePathsWithObstacles(obstaclegrid):
 
 if __name__ == '__main__':
     query = [[0, 0, 0], [0, 1, 0], [0, 0, 0]]
-    print "The number of unique paths possible are :", uniquePathsWithObstacles(query)
+    print ("The number of unique paths possible are :", uniquePathsWithObstacles(query))

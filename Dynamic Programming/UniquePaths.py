@@ -21,4 +21,4 @@ def calculate_unique_paths(m, n):
 
 
 if __name__ == '__main__':
-    print "The number of unique paths possible are :", calculate_unique_paths(3, 7)
+    print ("The number of unique paths possible are :", calculate_unique_paths(3, 7))
