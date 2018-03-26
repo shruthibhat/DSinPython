@@ -25,7 +25,7 @@ def uniquePathsWithObstacles(obstaclegrid):
     matrix[m - 1][n] = 1
     for row in range(m-1, -1, -1):
         for col in range(n-1, -1, -1):
-            if obstacleGrid[row][col] is 1:
+            if obstaclegrid[row][col] is 1:
                 matrix[row][col] = 0
             else:
                 matrix[row][col] = matrix[row][col + 1] + matrix[row + 1][col]
