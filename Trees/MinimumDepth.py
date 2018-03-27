@@ -27,22 +27,22 @@ class Solution(object):
         right_depth = self.minimum_depth_of_a_tree(root.right)
 
         if left_depth is 0:
-            return right_depth + 1
-        elif right_depth is 0:
             return left_depth + 1
+        elif right_depth is 0:
+            return right_depth + 1
 
-        return min(left_depth, right_depth) + 1
+        return min(self.minimum_depth_of_a_tree(root.left), self.minimum_depth_of_a_tree(root.right)) + 1
 
 
 if __name__ == "__main__":
-    root = TreeNode(3)
-    root.left = TreeNode(9)
-    root.right = TreeNode(20)
-    root.right.left = TreeNode(15)
-    root.right.right = TreeNode(7)
+    TreeNode1 = TreeNode(3)
+    TreeNode1.left = TreeNode(9)
+    TreeNode1.right = TreeNode(20)
+    TreeNode1.right.left = TreeNode(15)
+    TreeNode1.right.right = TreeNode(7)
     sol = Solution()
 
-    root2 = TreeNode(2)
-    root.left = TreeNode(10)
-    print("Minimum depth of the tree is :", sol.minimum_depth_of_a_tree(root))
-    print("Minimum depth of the tree is :", sol.minimum_depth_of_a_tree(root2))
+    TreeNode2 = TreeNode(2)
+    TreeNode2.left = TreeNode(10)
+    print("Minimum depth of the TreeNode1 is :", sol.minimum_depth_of_a_tree(TreeNode1))
+    print("Minimum depth of the TreeNode2 is :", sol.minimum_depth_of_a_tree(TreeNode2))
