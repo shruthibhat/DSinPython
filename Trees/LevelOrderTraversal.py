@@ -37,7 +37,7 @@ class Solution(object):
                 queue.appendleft(node.left)
             if node.right is not None:
                 queue.appendleft(node.right)
-
+        print ("  ")
 
 if __name__ == "__main__":
     TreeNode1 = TreeNode(3)
@@ -47,6 +47,10 @@ if __name__ == "__main__":
     TreeNode1.right.right = TreeNode(7)
     sol = Solution()
 
-    print("Level order traversal result :", sol.level_order_traversal(TreeNode1))
+    TreeNode2 = TreeNode(234)
+    print ("Level order traversal: ")
+    sol.level_order_traversal(TreeNode1)
+    print ("Level order traversal: ")
+    sol.level_order_traversal(TreeNode2)
 
 
