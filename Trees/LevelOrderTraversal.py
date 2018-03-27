@@ -38,6 +38,7 @@ class Solution(object):
             if node.right is not None:
                 queue.appendleft(node.right)
 
+
 if __name__ == "__main__":
     TreeNode1 = TreeNode(3)
     TreeNode1.left = TreeNode(9)
