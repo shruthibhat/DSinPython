@@ -5,6 +5,8 @@ down to the nearest leaf node
 
 """
 
+__author__ = "Shruthi"
+
 
 class TreeNode(object):
     def __init__(self, x):
